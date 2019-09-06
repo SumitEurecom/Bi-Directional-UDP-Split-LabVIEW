@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B6637D30707CD8234C77DFAE4F5C49E0246834C69A25B4158008B48B170C6BD560EB0227DBEB7BE7A9D574B98A7221A755FCCD15FD2B28E1B96215DEBCDE0869" Timestamp="1D56488EBCB1E33" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="9A77E462A7060F7BD1D57ADEEF4C46D2D9652B9D5256AEA7E9FC94B55A35B2E744372D4D001703BA1DC9D1A49DD0E543A2F1ABF7778A4F5491E9432C7A31BDD7" Timestamp="1D5648D7510A597" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Data Communication" Name="http://www.ni.com/LabVIEW.DataComms" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49152" />
@@ -94,14 +94,14 @@
 			<Wire Id="7f133f445b824346a36e3d092065d563" Joints="N(642088a2f2d24a5eac544c5182190fc7:queue out)|(-225,150) h(5) v(65) h(40) B(3) N(3104c1be63454d37a2392215ef678ddc:o0)|(501,215) B(3) v(180) N(7059472c9f2640828eae2f80c7f82c30:o0)|(-14,395)" xmlns="http://www.ni.com/PlatformFramework" />
 			<StringToIpAddress Bounds="-320 275 40 20" Id="94c005cfebeb41d9ae2b6536b1240e84" xmlns="http://www.ni.com/LabVIEW.DataComms" />
 			<Wire Id="730a86be08484862be7b0a300d726f0f" Joints="N(94c005cfebeb41d9ae2b6536b1240e84:net address)|(-280,280) h(410) N(9e1b455018484e0daf1ff9058bed7e46:o0)|(130,316)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="-455 275 105 15" DataType="String" Id="1b56d6a670b2449a8ba4fdf98f5ee27f" Label="90fb4e7f807408fa5fe661f7ebbdc61" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="-545 315 105 15" DataType="String" Id="1b56d6a670b2449a8ba4fdf98f5ee27f" Label="90fb4e7f807408fa5fe661f7ebbdc61" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>10.186.110.41</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
-			<NodeLabel AttachedTo="1b56d6a670b2449a8ba4fdf98f5ee27f" Bounds="-455 257 30 15" Id="90fb4e7f807408fa5fe661f7ebbdc61" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="1b56d6a670b2449a8ba4fdf98f5ee27f" Bounds="-545 297 30 15" Id="90fb4e7f807408fa5fe661f7ebbdc61" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>name</p.Text>
 			</NodeLabel>
-			<Wire Id="7eb1f16be2134748b41d13ec3f8a7339" Joints="N(1b56d6a670b2449a8ba4fdf98f5ee27f:Out)|(-350,280) N(94c005cfebeb41d9ae2b6536b1240e84:name)|(-320,280)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="7eb1f16be2134748b41d13ec3f8a7339" Joints="N(1b56d6a670b2449a8ba4fdf98f5ee27f:Out)|(-440,320) h(5) v(-40) N(94c005cfebeb41d9ae2b6536b1240e84:name)|(-320,280)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="-390 245 60 15" DataType="UInt16" Id="668e3147907141268b159e1e90ad5a9a" Label="6580ec4b7fd241c0ad9f935dcf80fae4" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>50002</p.Data>
 				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
@@ -196,6 +196,24 @@
 			<Wire Id="cd5a151db4554dc29e45ae1f48a0922c" Joints="N(af084375ff6c4063b058ec921434e1cc:net address)|(-235,385) h(90) N(fab00d55f8144891af64d193d93d9e48:net address)|(-145,435)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="-640 -150 380 85" Id="f4a099697ef8441db2fb18cd0b1a6dd3" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"udp_transmission.gvi version 1.1                                                       \r\nThis gvi is used for udp transmission of video as well as iperf tests\r\nAuthor: Sumit Kumar\r\nSnT\r\nDate: 5 Sept 2019"</p.Text>
+			</Comment>
+			<Comment Bounds="-225 -55 385.333344 15" Id="cda8a66153d442b09cc1d6576b121e65" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>S-1: IP of system where UDP payload is generated, i.e., System-A</p.Text>
+			</Comment>
+			<Comment Bounds="-255 5 240 15" Id="32a779673db148368d2459f085b45304" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"S-2: udp port where payload will come "</p.Text>
+			</Comment>
+			<Comment Bounds="-415 225 385.333344 15" Id="7ec65788ea3d4c21a40b930a180d5264" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>S-4: port of udp on the remote system where the client can listen</p.Text>
+			</Comment>
+			<Comment Bounds="-550 295 334.666656 15" Id="adf395029af24c1daec5f305552e9fa8" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>S-3: IP of system-B, i.e., destination of UDP transmission</p.Text>
+			</Comment>
+			<Comment Bounds="-390 360 114.666664 15" Id="6ed58aed67de4ed1aafdb19f277fc3de" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>S-5: same as S-1</p.Text>
+			</Comment>
+			<Comment Bounds="-380 415 285.333344 15" Id="39b234dc4c754230b360ce18cdd2e1b4" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>S-6: any port number we put here, insignificant</p.Text>
 			</Comment>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" HtmlPanel="[bool]False" Id="187a535b2ac74aac98685ee197cdcd83" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
