@@ -1,0 +1,37 @@
+We need two desktops, one(say system A) with Labview NXG 3.1.1 and VLC media player installed and 
+another (system B--we do not need Labview but only VLC here). Both system-A and system-B need to be connected on same subnet and must
+be pingable from each other.
+In system A, in the script udp_transmission.gvi, we first do the following settings:
+S-1: Find ip of A and put it here.
+S-2: Put the UDP port number, put anything.
+S-3: ip of system-B which is the destination.
+S-4: UDP port at destination, chose anything. 
+S-5: Put same ip as S-1.
+S-6: Put any port number, insignificant.
+Now we can do two tests 1. VLC media streaming 2. iperf test
+
+VLC media streaming
+1. Open VLC media player in system-A.
+2. Click on Media(top left), go to Stream.
+3. Add a media file, i.e., video/audo which you want to broadcast.
+4. Click on stream, then Next.
+5. In the New Destination, chose udp from the drop down and add.
+6. Put the IP address of system-A (S-1) and port number (S-2) and then Next.
+7. Check on activate transcoding and chose the format. For video MPEG-2+MPEG(TS) is good, for audio use any mp3 format.
+8. Click next and then stream.
+9. In system-B, open a VLC media player.
+10. Click on Media, then Open network stream.
+11. In the network url field, enter udp://@<ip of system-2>:<port of system-2>. Do not enter the -- "<>"
+12. Click play.
+
+Now run the udp_transmission.gvi in system-A and you should be able to see the video on system-B.
+
+iperf test
+1. Install iperf version-2 (not 3) on both system-A and B. https://iperf.fr/iperf-download.php
+2. This test was conducted using iperf 2.0.9. 
+3. On system-B open command window and type the following and hit enter 
+4. iperf -s -u -p <S-4 port>
+5. On System-A open command window and hit enter the following
+6. iperf -c <S-1 ip address> -u -p <S-2 port> -l 200
+7. Now run the udp_transmission.gvi on system-A
+8. After some seconds, you shoud be able to see the network throughput on system-B
