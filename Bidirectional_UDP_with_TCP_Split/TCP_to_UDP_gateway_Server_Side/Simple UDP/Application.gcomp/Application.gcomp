@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="668D4A3A3ECC0E405E7C9E8F09B6D155784D1C3B16CFC5BB1F1C99658E628D1F66668CD1BBD22B5EC92191D0140F8013A334D0DD0AC1CDDF2F52CABB62EB356A" Timestamp="1D58256C0849291" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="41a36c2486534e93a6cd13ba887eb892" RootNamespaceId="e45acf2c997749b79f27d66a83828411" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="f85980c9283a4800a33e13e9e9574f21" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="c26fe1f28c47452eb749e65b6ce91c5a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="d9703dd0e75c43bc832b76982882dfe1" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="5945c99d2a534b8ca5394825f8792325" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration ComponentSubtypeIdentifier="Application" Id="b639f5ae15224d21b8b6ee0ff00ac10a" Name="Configuration1">
+			<CompilerSymbolTable Id="e157547daad644e2a8c81416ec3596c1" xmlns="http://www.ni.com/PlatformFramework" />
+			<NativeApplicationOutputTypeProperties Id="85348ec71e6448108bab8268cbbec409" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="dc8399263cfc43f2b766c5a9a2899482" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="68561221d2354c388fcf540ae6316ee1" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Id="7b5a6a803a4e4799b0fca70b233a236b" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="e45acf2c997749b79f27d66a83828411" Name="Application">
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="25381fce7acc49c4a2cc4ee96684b663" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Simple UDP - Receiver.gvi" StoragePath="Simple UDP - Receiver.gvi" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="88b80efd31344b6ab1cb3800b8797ca6" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Simple UDP - Sender.gvi" StoragePath="Simple UDP - Sender.gvi" />
+				<SourceFileReference Id="bd4abc45dee44051b8f110cdaa086fe6" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Channel.gvi" StoragePath="Channel.gvi" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="a5ce1f05cd6f4d8ba6ac3c9b31fa32b8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Application.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="b639f5ae15224d21b8b6ee0ff00ac10a" Id="e9f017405b70402a9220ab747f873fdf" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

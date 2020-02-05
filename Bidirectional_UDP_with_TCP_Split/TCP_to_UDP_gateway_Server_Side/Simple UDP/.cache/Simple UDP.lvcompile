@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JobList>
+  <Job OutputType="Application">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>Application</ComponentSubtypeIdentifier>
+      <BuildId>C:\Users\jevgenij.krivochiza.UNI\Documents\LabVIEW Projects\Simple UDP\Builds\Application_This Computer\Application.exe</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>Application</ComponentSubtypeIdentifier>
+      <BuildId>C:\Users\jevgenij.krivochiza.UNI\Documents\LabVIEW Projects\Simple UDP\Builds\Application_This Computer\Application.exe</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application_This Computer\Application.exe</OutputPath>
+    <BuildName>Application</BuildName>
+    <State>Success</State>
+    <LastTotalTime>00:00:00</LastTotalTime>
+    <HasChild>False</HasChild>
+    <QualifiedName>::DevSystem::Interactive::Application.gcomp</QualifiedName>
+  </Job>
+</JobList>
